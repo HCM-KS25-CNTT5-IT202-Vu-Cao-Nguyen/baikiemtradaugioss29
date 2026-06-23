@@ -75,10 +75,10 @@ while True:
             current_hero = Spellblade(hp, strength)
 
             total_hp = current_hero + current_hero
-            print(f">> Đã khởi tạo Spellblade. HP: {current_hero.base_hp}, Strength: {current_hero.strength}")
-            print(f">> Phép toán cộng (current_hero + current_hero): Tổng HP = {total_hp}")
+            print(f"Spellblade. HP: {current_hero.base_hp}, Strength: {current_hero.strength}")
+            print(f"Tổng HP = {total_hp}")
 
-            print(f">> MRO của Spellblade: {' -> '.join([cls.__name__ for cls in Spellblade.__mro__])}")
+            print(f"{' -> '.join([cls.__name__ for cls in Spellblade.__mro__])}")
 
         except ValueError:
             print("Lỗi: Vui lòng nhập số nguyên hợp lệ cho HP và Strength.")
